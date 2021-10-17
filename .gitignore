@@ -1,0 +1,14 @@
+vendor/
+db/
+log/
+node_modules/
+vendor/
+lib/
+public/
+bin/
+tmp/
+storage/
+docker-compose.yml
+Dockerfile
+config/credentials.yml.enc
+config/master.key
