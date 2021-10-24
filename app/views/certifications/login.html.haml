@@ -1,4 +1,17 @@
 !!!
 %html
   %body
-    %h1 ログイン画面
+    .container
+      %main.form-signin
+        %form
+          %h1.h3.mb-3.fw-normal サインインする
+          %label.visually-hidden{:for => "inputEmail"} メールアドレス
+          %input#inputEmail.form-control{:autofocus => "", :placeholder => "メールアドレス", :required => "", :type => "email"}/
+          %label.visually-hidden{:for => "inputPassword"} パスワード
+          %input#inputPassword.form-control{:placeholder => "パスワード", :required => "", :type => "password"}/
+          .checkbox.mb-3
+            %label
+              %input{:type => "checkbox", :value => "remember-me"}/
+              記憶する
+          %button.w-100.btn.btn-lg.btn-primary{:type => "submit"} サインイン
+          %p.mt-5.mb-3.text-muted © 2017-2021
