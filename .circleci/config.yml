@@ -9,13 +9,8 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-      - run:
-          name: "debug"
-          command: "ls -l"
 
 workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-     jobs:
-      - debug
