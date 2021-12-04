@@ -10,15 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_17_092402) do
+ActiveRecord::Schema.define(version: 2021_12_04_055712) do
 
-  create_table "articles", charset: "utf8mb4", force: :cascade do |t|
-    t.string "title"
-    t.text "context"
-    t.string "tag"
-    t.binary "img"
+  create_table "staff_members", charset: "utf8mb4", force: :cascade do |t|
+    t.string "email", null: false
+    t.string "family_name", null: false
+    t.string "given_name", null: false
+    t.string "family_name_kana", null: false
+    t.string "given_name_kana", null: false
+    t.string "hashed_password"
+    t.date "start_data", null: false
+    t.date "end_data"
+    t.boolean "suspended", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_staff_members_on_email", unique: true
+    t.index ["family_name_kana", "given_name_kana"], name: "index_staff_members_on_family_name_kana_and_given_name_kana"
   end
 
 end
