@@ -15,6 +15,12 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'haml-rails'
 gem 'erb2haml'
+gem 'bcrypt'
+gem 'rails-i18n'
+gem 'kaminari'
+# gem 'data_validator'
+gem 'valid_email2'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
