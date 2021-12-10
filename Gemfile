@@ -18,7 +18,6 @@ gem 'erb2haml'
 gem 'bcrypt'
 gem 'rails-i18n'
 gem 'kaminari'
-# gem 'data_validator'
 gem 'valid_email2'
 gem 'nokogiri'
 
